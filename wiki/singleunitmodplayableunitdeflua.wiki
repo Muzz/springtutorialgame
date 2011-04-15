@@ -1,34 +1,57 @@
-
 =What is this?=
 ---enter text here---
+this the unitdef.lua file that explain all data of what made this unit to the engine :
+for resume its the only unit in the game : that is the base unit for the complete basic mod :
+this unit list all tags existing 
+
+but only the mandatory are enabled 
+
+for this gameplay concept :
+
+ the unit self replicate ,
+
+and is a kamikaze , 
+have  no visibility 
+but only radar & sonar ,
+
+, can "roll" on the ground and the deep underwater ground ,
+
+ 3d model(.s3o) is an empty ,
+
+ own selfdestruct if needed for kamikaz and explod is big enought for make chain reaction ,
+
+ no sounds , 
+
+build menu picture , 
+
+,empty script anim ,  
+
+
 
 unitdefs for single unit mod playable :
 {{{
 unitDef = {
   
  -- files & data links
-unitname="buildm00",--filename
-BuildPic = "buildm00.jpg",--menupicture
-ObjectName = "buildm00",--3dmodel
-script = "buildm00anim3d.lua",--3d animation file
-movementclass = "roler3",--map movement file
+unitname="singleunit0",--filename
+BuildPic = "singleunit0.jpg",--menupicture
+ObjectName = "singleunit0",--3dmodel
+script = "singleunit0anim3d.lua",--3d animation file
+movementclass = "roler1",--map movement file
 	 
 -- Unit properties
  Name = "buildm00",--name at screen ingame	
 Description = "armored & weaponed Constructer",--description at screen inn game
 
-BuildTime = 15999,--time for being build(milliseconde)
+BuildTime = 1,--time for being build(milliseconde)
 levelground = 0,--is the ground is flated under unit when being build
-MaxWaterDepth = 25,--max water deep where can being build
+MaxWaterDepth = 255,--max water deep where can being build
 MaxSlope = 25,--38,	--max slope where ca being build
 
 -- Energy and metal related
-	BuildCostEnergy = 5555,--energy spend for build this unit
-	BuildCostMetal = 4444,--metal spend for build this unit
-	EnergyStorage = 200,--increase the global storage by a value when alive
-	EnergyUse = 80,--use energy whe n mve or switch on for static
-	MetalStorage = 200,--increase the global metal stockage when alive
-	EnergyMake = 200, --make energy when switch on onoffable is on or if not exist then always
+BuildCostEnergy = 1,--energy spend for build this unit
+BuildCostMetal = 1,--metal spend for build this unit
+EnergyMake = 200, --make energy when switch on onoffable is on or if not exist then always
 
 MetalMake = 200,--	make metal when switch on onoffable is on or if not exist then always
 --Hitbox
@@ -50,29 +73,29 @@ TurnRate = 333,--milliradian per second or so
 
 --sensor & detectability (ingame must use L key for show zones of detection )
 
---RadarDistance = 0,--show some plot at the range of this unit where are the ennemy ground & air(with randomness if not isatargetupgrad=1 unit in team)not subwater
---sonarDistance       = 00,--show some plot at the range of this unit where are the ennemy subwater(with randomness if not isatargetupgrad=1 unit in team)not ground & air
-SightDistance = 444,--show ennemy at this unit range
-SeismicSignature=2,--notwork--to verify --show this size of plot at the range of the unit having seismicdistance (unit dont atack automaiticly the plot) 
-Seismicdistance=1800,--not work--to verify --distance from the unit where the ennemy show a plot if the have a seismic signature
+--RadarDistance = 200,--show some plot at the range of this unit where are the ennemy ground & air(with randomness if not isatargetupgrad=1 unit in team)not subwater
+--sonarDistance       = 100,--show some plot at the range of this unit where are the ennemy subwater(with randomness if not isatargetupgrad=1 unit in team)not ground & air
+SightDistance = 0,--show ennemy at this unit range
+SeismicSignature=1,--notwork--to verify --show this size of plot at the range of the unit having seismicdistance (unit dont atack automaiticly the plot) 
+Seismicdistance=1000,--not work--to verify --distance from the unit where the ennemy show a plot if the have a seismic signature
 
 --builder Abilities
 	Builder = 1,--the unit build some static or mobile units
-	BuildDistance = 101,	--the unit build or repair or reclaim or restore or capture or resurect at this distance
+	BuildDistance = 40,	--the unit build or repair or reclaim or restore or capture or resurect at this distance
 	WorkerTime = 555,	--amount per second can be spent in build metal or energy max
 	buildoptions = {   "hexarot5"}
 		
  MaxDamage = 2222,--life count of the unit when 0 the unit replaced per a corpse or nothing but stop to being team controled weapon will substract it and capture must upsize it
 kamikaze=1,--the unit automaticly selfdestruckt when ennemy is at kamikazedistance
 kamikazedistance=160,--distance when less the unit will selfdestruct
-ExplodeAs ="mortier0",--when the unit die (not by reclaim or capture)this weapon effect at the root of the unit
-	SelfDestructAs =  "mortier0",--when kamikaz or self destruct key is done CanAttack = 1,--unit is  warrior
+ExplodeAs ="litleexplod",--when the unit die (not by reclaim or capture)this weapon effect at the root of the unit
+	SelfDestructAs =  "bigexplod",--when kamikaz or self destruct key is done CanAttack = 1,--unit is  warrior
 
     },
 
    
 }			
-return lowerkeys({ buildm00 = unitDef })
+return lowerkeys({ singleunit0 = unitDef })
 
 }}}
 
