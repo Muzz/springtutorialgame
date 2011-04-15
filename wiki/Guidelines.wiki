@@ -18,3 +18,7 @@ use camelCase
 spell check names of variables etc
 
 formating in a way that makes sense
+
+no .cob, only .lua
+
+no .3do, only .s3o (or .obj if that is working?)
