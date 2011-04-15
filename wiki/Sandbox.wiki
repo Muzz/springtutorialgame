@@ -15,3 +15,5 @@ if not knorke then
   knorke = knorke + 1
 end
 }}}
+
+<wiki:video url="http://www.youtube.com/watch?v=3LkNlTNHZzE"/> 
