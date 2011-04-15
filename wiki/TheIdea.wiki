@@ -35,3 +35,10 @@ collisionVolumeOffsets    =  [[0 0 0]],
 collisionVolumeType       =  [[box]],
 collisionVolumeScales     =  [[55 65 55]],
 </code>
+
+Tested in game : 
+<code>
+collisionVolumeOffsets ="0 0 0",--location of the hit shere or volume related to the center of the root 3d
+collisionVolumeScales= "10 11 16",--lenght of the edge of the hit volume (maybe 10 per footprint)
+collisionVolumeType="box",--volume of the hit geometry sphere box cylinder
+</code>
