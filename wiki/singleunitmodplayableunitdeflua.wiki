@@ -15,7 +15,7 @@ Add your content here.  Format your content with:
 
 
 unitdefs for single unit mod playable :
-<code>
+{{{
 unitDef = {
   
  -- files & data links
@@ -86,6 +86,6 @@ ExplodeAs ="mortier0",--when the unit die (not by reclaim or capture)this weapon
 }			
 return lowerkeys({ buildm00 = unitDef })
 
-</code>
+}}}
 
 lets discuss about unmandatory lines if can be removed : if build cost can be =0
