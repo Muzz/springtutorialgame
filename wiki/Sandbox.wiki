@@ -8,3 +8,10 @@ test stuff here, like if you have commit rights
 ==lol==
 ===lol===
 ====lol====
+
+{{{
+local knorke
+if not knorke then
+  knorke = knorke + 1
+end
+}}}
