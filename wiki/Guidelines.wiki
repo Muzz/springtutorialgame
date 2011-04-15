@@ -10,6 +10,10 @@ even for wiki and also if it is just a small change.
 
 test/preview before commiting.
 
+Wiki syntax: https://code.google.com/p/support/wiki/WikiSyntax
+
+Using Tortoise svn tutorial: http://www.igorexchange.com/node/87
+
 =scripting/other games files=
 comment code
 
