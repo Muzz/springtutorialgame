@@ -21,3 +21,5 @@ end
 <wiki:video url="http://youtu.be/E3ABAQqKJ7w"/> its a youtube video
 
 is horrible video are alowed in sandbox?
+
+why i see that page white withe text box black and text black ??
