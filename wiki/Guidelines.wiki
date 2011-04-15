@@ -1,0 +1,20 @@
+#summary guide lines for wiki and code so there will be some order
+#labels guidelines,design,pleaseread,pleasefollow
+
+=General=
+Language: english
+
+always write a commit log.
+
+even for wiki and also if it is just a small change.
+
+test/preview before commiting.
+
+=scripting/other games files=
+comment code
+
+use camelCase
+
+spell check names of variables etc
+
+formating in a way that makes sense
