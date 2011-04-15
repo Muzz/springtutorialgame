@@ -1,0 +1,12 @@
+#summary what this is all about
+#labels introduction,idea
+
+= Introduction =
+
+For new modders it is hard to find a starting place for their new game.
+The idea is to create a spring game with just the very basic stuff.
+
+= Details =
+
+Popular "base mods" seem to be zeroK and various TA based games but those are usually too big, complicated and still have some leftover mistakes. It is also hard to filter what files are mandatory and what files are game specific.
+Read http://springrts.com/phpbb/viewtopic.php?f=14&t=25831
