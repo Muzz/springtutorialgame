@@ -17,7 +17,7 @@ end
 }}}
 
 <wiki:video url="http://www.youtube.com/watch?v=3LkNlTNHZzE"/> 
-
+<wiki:video url=http://www.youtube.com/watch?v=E3ABAQqKJ7w"/> 
 <wiki:video url="http://youtu.be/E3ABAQqKJ7w"/> its a youtube video
 
 is horrible video are alowed in sandbox?
