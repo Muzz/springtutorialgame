@@ -1,18 +1,6 @@
-#summary One-sentence summary of this page.
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
-
-
+=What is this?=
+---enter text here---
 
 unitdefs for single unit mod playable :
 {{{
@@ -89,3 +77,8 @@ return lowerkeys({ buildm00 = unitDef })
 }}}
 
 lets discuss about unmandatory lines if can be removed : if build cost can be =0
+
+knorke:
+there is lots of unmandatory lines, too much to list now.
+ill start uploading game files later and then we can edit these.
+also please use commit log and formating
