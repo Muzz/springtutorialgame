@@ -1,0 +1,91 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+
+
+unitdefs for single unit mod playable :
+>code>
+unitDef = {
+  
+ -- files & data links
+unitname="buildm00",--filename
+BuildPic = "buildm00.jpg",--menupicture
+ObjectName = "buildm00",--3dmodel
+script = "buildm00anim3d.lua",--3d animation file
+movementclass = "roler3",--map movement file
+	 
+-- Unit properties
+ Name = "buildm00",--name at screen ingame	
+Description = "armored & weaponed Constructer",--description at screen inn game
+
+BuildTime = 15999,--time for being build(milliseconde)
+levelground = 0,--is the ground is flated under unit when being build
+MaxWaterDepth = 25,--max water deep where can being build
+MaxSlope = 25,--38,	--max slope where ca being build
+
+-- Energy and metal related
+	BuildCostEnergy = 5555,--energy spend for build this unit
+	BuildCostMetal = 4444,--metal spend for build this unit
+	EnergyStorage = 200,--increase the global storage by a value when alive
+	EnergyUse = 80,--use energy whe n mve or switch on for static
+	MetalStorage = 200,--increase the global metal stockage when alive
+	EnergyMake = 200, --make energy when switch on onoffable is on or if not exist then always
+
+MetalMake = 200,--	make metal when switch on onoffable is on or if not exist then always
+--Hitbox
+mass=799,	--mass of the unit related to the gravity and the size x & y (unknow calculation)
+Upright = 0,--is the unit always vertical 
+FootprintX = 3,--large of the unit (mobile unit found dificultly a way when 3 or 4 (worst a t 5or more)
+FootprintZ = 3,--lenghtof the unit (mobile unit found dificultly a way when 3 or 4 (worst a t 5or more)
+collisionVolumeOffsets    =  "0 -5 0",--location of the hit shere or volume related to the center of the root 3d
+collisionVolumeScales     =  "41 33 41",--lenght of the edge of the hit volume (maybe 10 per footprint)
+--collisionVolumeTest       =  1,--unknow
+  -- collisionVolumeType       =  "box",--volume of the hit geometry sphere box cylinder
+   
+-- Pathfinding and related
+CanMove = 1,--is a static or mobile
+Acceleration = 0.9,--time for being at max speed or speed gain per second ?
+BrakeRate = 1,	--time for being at stop or speed loose per second ?
+MaxVelocity = 4.0,--max speed (10= 1map =512pixel per second)
+TurnRate = 333,--milliradian per second or so
+
+--sensor & detectability (ingame must use L key for show zones of detection )
+
+--RadarDistance = 0,--show some plot at the range of this unit where are the ennemy ground & air(with randomness if not isatargetupgrad=1 unit in team)not subwater
+--sonarDistance       = 00,--show some plot at the range of this unit where are the ennemy subwater(with randomness if not isatargetupgrad=1 unit in team)not ground & air
+SightDistance = 444,--show ennemy at this unit range
+SeismicSignature=2,--notwork--to verify --show this size of plot at the range of the unit having seismicdistance (unit dont atack automaiticly the plot) 
+Seismicdistance=1800,--not work--to verify --distance from the unit where the ennemy show a plot if the have a seismic signature
+
+--builder Abilities
+	Builder = 1,--the unit build some static or mobile units
+	BuildDistance = 101,	--the unit build or repair or reclaim or restore or capture or resurect at this distance
+	WorkerTime = 555,	--amount per second can be spent in build metal or energy max
+	buildoptions = {   "hexarot5"}
+		
+ MaxDamage = 2222,--life count of the unit when 0 the unit replaced per a corpse or nothing but stop to being team controled weapon will substract it and capture must upsize it
+kamikaze=1,--the unit automaticly selfdestruckt when ennemy is at kamikazedistance
+kamikazedistance=160,--distance when less the unit will selfdestruct
+ExplodeAs ="mortier0",--when the unit die (not by reclaim or capture)this weapon effect at the root of the unit
+	SelfDestructAs =  "mortier0",--when kamikaz or self destruct key is done CanAttack = 1,--unit is  warrior
+
+    },
+
+   
+}			
+return lowerkeys({ buildm00 = unitDef })
+
+</code>
+
+lets discuss about unmandatory lines if can be removed : if build cost can be =0
