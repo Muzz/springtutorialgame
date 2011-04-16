@@ -18,6 +18,15 @@ Let's try it like this:
 6) give reports in the issue thread
 
 
+Use these status options:
+(select from the dropdown menu thing when clicking "Status")
+
+Workflow_New - when creating a new item to be worked on<br>
+WorkFlow_I_will_do_it - when you have decided to work on this<br>
+Workflow_Almost_Done - when you are basically done but need some feedback<br>
+Workflow_Done - when its finished<br>
+
+
 For an example see:
 
 https://code.google.com/p/springtutorialgame/issues/detail?id=1
