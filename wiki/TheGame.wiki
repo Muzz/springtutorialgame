@@ -6,10 +6,10 @@ Pick a topic and start adding stuff.
 Or creation a new section I forgott.
 
 =Units=
-there need to be some [[Units]]
+there need to be some [Units]
 
 =Weapons=
-there need to be some [[Weapons]]
+there need to be some [Weapons]
 
 =Lua gadgets=
 there needs to be at least something to spawn start units
