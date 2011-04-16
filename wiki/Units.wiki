@@ -11,6 +11,7 @@ The issue is: http://code.google.com/p/springtutorialgame/issues/detail?id=1
 
 
 -mobile unit with weapon. to show use of weapons and the aiming/fire script.
+This unit is: [[Unit_SimpleAttackVehicle]]
 
 -a building
 
