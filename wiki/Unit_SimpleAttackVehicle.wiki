@@ -1,0 +1,27 @@
+#summary mobile unit with simple weapon and basic animation
+#labels unit
+
+mobile unit with simple weapon and basic animation
+
+weaponDef in seperate file
+
+unitname: simpleattackvehicle
+
+http://code.google.com/p/springtutorialgame/source/browse/trunk/SpringTutorialGame.sdd/Units/simpleattackvehicle.lua
+
+=Status=
+ingame, needs cleaning up (?)
+
+http://h-6.abload.de/img/simpleattackvehiclev7zn.gif
+
+=Advanced Version=
+an advanced version of this unit could have:
+aiming animation
+
+fire animation (recoil)
+
+emit CEG effects on shooting, exploding
+
+burst fire weapon
+
+[category: Units]
