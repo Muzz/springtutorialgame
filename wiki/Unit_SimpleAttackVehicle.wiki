@@ -14,14 +14,12 @@ ingame, needs cleaning up (?)
 
 http://h-6.abload.de/img/simpleattackvehiclev7zn.gif
 
-=Advanced Version=
-an advanced version of this unit could have:
-aiming animation
+=Advanced Versions=
+https://code.google.com/p/springtutorialgame/source/browse/trunk/SpringTutorialGame.sdd/Units/attackvehicledoublebarrel.lua
+recoil animation
+firing from 2 barrels
 
-fire animation (recoil)
-
-emit CEG effects on shooting, exploding
-
-burst fire weapon
+==other versions?==
+----
 
 [category: Units]
